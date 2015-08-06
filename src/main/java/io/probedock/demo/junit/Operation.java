@@ -13,7 +13,7 @@ public abstract class Operation {
     protected int rightOperand;
 
     /**
-     * Constructor for a simple operation without compisition
+     * Constructor for a simple operation without composition
      *
      * @param leftOperand Left operand is an integer
      * @param rightOperand Right operand is an integer
