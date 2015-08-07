@@ -76,6 +76,22 @@ public abstract class Operation {
         return calculate();
     }
 
+    public Operation getLeftOperation() {
+        return leftOperation;
+    }
+
+    public Operation getRightOperation() {
+        return rightOperation;
+    }
+
+    public int getLeftOperand() {
+        return leftOperand;
+    }
+
+    public int getRightOperand() {
+        return rightOperand;
+    }
+
     /**
      * Delegates the operation between two integers to the subclasses
      *
