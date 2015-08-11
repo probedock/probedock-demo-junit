@@ -2,8 +2,10 @@ package io.probedock.demo.junit;
 
 import io.probedock.client.annotations.ProbeTest;
 import io.probedock.client.annotations.ProbeTestClass;
+import io.probedock.rt.client.junit.ProbeDockRTBlockJUnit4ClassRunner;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
@@ -12,6 +14,7 @@ import static org.junit.Assert.*;
  *
  * @author Laurent Prevost <laurent.prevost@probedock.io>
  */
+@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
 @ProbeTestClass(contributors = "laurent.prevost@probedock.io", tags = "add", tickets = "feature-1")
 public class OperationAddTest {
     @Test

@@ -2,7 +2,9 @@ package io.probedock.demo.junit;
 
 import io.probedock.client.annotations.ProbeTest;
 import io.probedock.client.annotations.ProbeTestClass;
+import io.probedock.rt.client.junit.ProbeDockRTBlockJUnit4ClassRunner;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -12,6 +14,7 @@ import static org.junit.Assert.assertNotEquals;
  *
  * @author Laurent Prevost <laurent.prevost@probedock.io>
  */
+@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
 @ProbeTestClass(contributors = "laurent.prevost@probedock.io", tags = "sub", tickets = "feature-2")
 public class OperationSubTest {
     @Test

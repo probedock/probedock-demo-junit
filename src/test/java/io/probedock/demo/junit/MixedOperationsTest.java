@@ -2,13 +2,16 @@ package io.probedock.demo.junit;
 
 import io.probedock.client.annotations.ProbeTest;
 import io.probedock.client.annotations.ProbeTestClass;
+import io.probedock.rt.client.junit.ProbeDockRTBlockJUnit4ClassRunner;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
 /**
  * Combined multiple operations at the same time
  */
+@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
 @ProbeTestClass(contributors = "laurent.prevost@probedock.io", tickets = { "feature-1", "feature-2", "feature-3", "feature-4" }, tags = "mixed")
 public class MixedOperationsTest {
     @Test
