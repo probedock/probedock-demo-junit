@@ -2,19 +2,30 @@
 
 > Demo of integration with [Probe Dock](https://github.com/probedock/probedock) and [Probe Dock RT](https://github.com/probedock/probedock-rt) for Junit.
 
-## Usage
-
-1. Clone this repository
-
-2. Follow the registration process
-
-3. Setup the project
-
-4. Run the tests
-
-### Requirements
+## Requirements
 
 * Java 6+
+* Maven 3.1
+* Node.js 0.12+
+* NPM 2.12+
+
+## Setup and usage
+
+1. If not done, install [Probe Dock RT](https://github.com/probedock/probedock-rt#installation).
+
+2. Clone this repository.
+
+3. Be sure you have prepared the Probe Dock RT configuration in step 1. To start Probe Dock RT, you have to run the command `probedock-rt` as describe in the [usage](https://github.com/probedock/probedock-rt#installation#usage) section of Probe Dock RT.
+
+4. Run the test via maven with `mvn clean test`. At this stage, you will see various result in the user interface of Probe Dock RT.
+
+5. Now you can continue to the Probe Dock setup. First, do the [registration](http://) on the demo server and create your account. You will receive an email confirmation with a link. 
+
+6. Create the project in your organization on Probe Dock. First, access the [projects' page](https://demo.probedock.io/prevolescompany/projects) and click on the `Add a new project` button. You can use the name `junit-sandbox` for example for both name and display name. You can leave the description empty for the demo.
+
+7. Once the project is created, you should follow the `Getting started` guide to setup your project. The guide will invite you to setup your main configuration file and the project configuration file. For this project, you must place the file `probedock.yml` in `<projectRootFolder>/src/test/resources/`. 
+
+8. Once again, you can run the test via maven with `maven clean test`. In addition of the test results shown in Probe Dock RT, you will also see results on Probe Dock on the dashboard. You are able to see the result details by clicking on the report line. 
 
 ## Contributing
 
