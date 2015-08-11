@@ -27,7 +27,7 @@
 
 8. Once again, you can run the test via maven with `mvn clean test`. In addition of the test results shown in Probe Dock RT, you will also see results on Probe Dock on the dashboard. You are able to see the result details by clicking on the report line. 
 
-9. Now you can place a bit with the tests. Break some tests and see the results on both interfaces. Play with the `@ProbeTest` and `@ProbeTestClass` annotations. You can also read the documentation of [Probe Dock Junit](https://github.com/probedock/probedock-junit) and [Probe Dock RT Junit](https://github.com/probedock/probedock-rt-junit) for more details about the clients used to send the test results. You have also several information on the [library](https://github.com/probedock/probedock-java) used by both clients. Finally, you will find the list of clients and libraries on these pages: [Probe Dock Clients](https://github.com/probedock/probedock-clients) and [Probe Dock RT Clients](https://github.com/probedock/probedock-rt-clients).
+9. Now you can play a bit with the tests. Break some tests and see the results on both interfaces. Play with the `@ProbeTest` and `@ProbeTestClass` annotations. You can also read the documentation of [Probe Dock Junit](https://github.com/probedock/probedock-junit) and [Probe Dock RT Junit](https://github.com/probedock/probedock-rt-junit) for more details about the clients used to send the test results. You have also several information on the [library](https://github.com/probedock/probedock-java) used by both clients. Finally, you will find the list of clients and libraries on these pages: [Probe Dock Clients](https://github.com/probedock/probedock-clients) and [Probe Dock RT Clients](https://github.com/probedock/probedock-rt-clients).
 
 ## Contributing
 
