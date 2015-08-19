@@ -21,7 +21,7 @@
 
 5. Now you can continue to the Probe Dock setup.  If already registered, skip this step. Do the [registration](http://) on the demo server and create your account. You will receive an email confirmation with a link. 
 
-6. Create the project in your organization on Probe Dock. First, access the [projects' page](https://demo.probedock.io/prevolescompany/projects) and click on the `Add a new project` button. You can use the name `junit-sandbox` for example for both name and display name. You can leave the description empty for the demo.
+6. Create the project in your organization on Probe Dock. First, access the projects' page and click on the `Add a new project` button. You can use the name `junit-sandbox` for example for both name and display name. You can leave the description empty for the demo.
 
 7. Once the project is created, you should follow the `Getting started` guide to setup your project. The guide will invite you to setup your main configuration file and the project configuration file. For this project, you must place the file `probedock.yml` in `<projectRootFolder>/src/test/resources/`. 
 
