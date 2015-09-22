@@ -2,18 +2,21 @@ package io.probedock.demo.junit;
 
 import io.probedock.client.annotations.ProbeTest;
 import io.probedock.client.annotations.ProbeTestClass;
-import io.probedock.rt.client.junit.ProbeDockRTBlockJUnit4ClassRunner;
+import io.probedock.rt.client.junit.ProbeDockRTRule;
+import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
 /**
  * Combined multiple operations at the same time
  */
-@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
+//@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
 @ProbeTestClass(contributors = "laurent.prevost@probedock.io", tickets = { "feature-1", "feature-2", "feature-3", "feature-4" }, tags = "mixed")
 public class MixedOperationsTest {
+    @Rule
+    public ProbeDockRTRule filterRule = new ProbeDockRTRule();
+
     @Test
     public void itShouldBePossibleToMixDifferentOperations() {
         assertEquals(5, new OperationDiv(new OperationAdd(20, new OperationSub(0, 10)), new OperationMul(1, 2)).process());
