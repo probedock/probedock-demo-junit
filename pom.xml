@@ -6,7 +6,7 @@
 
     <groupId>io.probedock.demo</groupId>
     <artifactId>probedock-demo-junit</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <packaging>jar</packaging>
 
     <name>Probe Dock Demo Junit integration</name>
@@ -172,13 +172,13 @@
         <dependency>
             <groupId>io.probedock.client</groupId>
             <artifactId>probedock-junit</artifactId>
-            <version>0.2.1</version>
+            <version>0.3.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.probedock.rt.client</groupId>
             <artifactId>probedock-rt-junit</artifactId>
-            <version>0.2.0</version>
+            <version>0.3.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
