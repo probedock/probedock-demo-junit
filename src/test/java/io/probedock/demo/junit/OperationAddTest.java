@@ -72,4 +72,16 @@ public class OperationAddTest {
     public void itShouldNotReturnTheCorrectResultWhenCalculateIsUsedWhereLeftIsOperationAndRightIsAlsoOperation() {
         assertNotEquals(4, new OperationAdd(new OperationAdd(1, 2), new OperationAdd(1, 0)).calculate());
     }
+		
+		@Test
+		@ProbeTest(tags = { "symbol" })
+		public void theOperationShouldReturnTheCorrectSymbol() {
+			assertEquals("+", new OperationAdd(1, 1).getSymbol());
+		}
+		
+		@Test
+		@ProbeTest(tags = { "output" })
+		public void itShouldBePossibleToPrintTheOperation() {
+			assertEquals("( 1 + 2 )", new OperationAdd(1, 2).toString());
+		}
 }

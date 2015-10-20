@@ -73,4 +73,16 @@ public class OperationSubTest {
     public void itShouldNotReturnTheCorrectResultWhenCalculateIsUsedWhereLeftIsOperationAndRightIsAlsoOperation() {
         assertNotEquals(-2, new OperationSub(new OperationSub(3, 2), new OperationSub(3, 0)).calculate());
     }
+
+		@Test
+		@ProbeTest(tags = { "symbol" })
+		public void theOperationShouldReturnTheCorrectSymbol() {
+			assertEquals("-", new OperationSub(1, 1).getSymbol());
+		}
+		
+		@Test
+		@ProbeTest(tags = { "output" })
+		public void itShouldBePossibleToPrintTheOperation() {
+			assertEquals("( 1 - 2 )", new OperationSub(1, 2).toString());
+		}
 }

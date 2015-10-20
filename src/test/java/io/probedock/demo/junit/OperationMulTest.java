@@ -73,4 +73,16 @@ public class OperationMulTest {
     public void itShouldNotReturnTheCorrectResultWhenCalculateIsUsedWhereLeftIsOperationAndRightIsAlsoOperation() {
         assertNotEquals(6, new OperationMul(new OperationMul(1, 3), new OperationMul(1, 2)).calculate());
     }
+		
+		@Test
+		@ProbeTest(tags = { "symbol" })
+		public void theOperationShouldReturnTheCorrectSymbol() {
+			assertEquals("*", new OperationMul(1, 1).getSymbol());
+		}
+		
+		@Test
+		@ProbeTest(tags = { "output" })
+		public void itShouldBePossibleToPrintTheOperation() {
+			assertEquals("( 1 * 2 )", new OperationMul(1, 2).toString());
+		}
 }

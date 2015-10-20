@@ -144,4 +144,16 @@ public class OperationDivTest {
             assertEquals("Cannot divide by zero.", ise.getMessage());
         }
     }
+		
+		@Test
+		@ProbeTest(tags = { "symbol" })
+		public void theOperationShouldReturnTheCorrectSymbol() {
+			assertEquals("/", new OperationDiv(1, 1).getSymbol());
+		}
+		
+		@Test
+		@ProbeTest(tags = { "output" })
+		public void itShouldBePossibleToPrintTheOperation() {
+			assertEquals("( 1 / 2 )", new OperationDiv(1, 2).toString());
+		}
 }

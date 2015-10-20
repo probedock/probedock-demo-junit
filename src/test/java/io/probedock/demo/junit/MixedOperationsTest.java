@@ -33,11 +33,19 @@ public class MixedOperationsTest {
     public void itShouldNotBePossibleToProcessTheOperationsIfDeepDivisionOperationHasRightOperandEqualToZero() {
         try {
             // 5 + (5 - (5 / (5 * (5 + (10 - 15)))))
-            new OperationAdd(5, new OperationSub(5, new OperationDiv(5, new OperationMul(5, new OperationAdd(5, new OperationSub(10, 15))))).process());
+            new OperationAdd(5, new OperationSub(5, new OperationDiv(5, new OperationMul(5, new OperationAdd(5, new OperationSub(10, 15)))))).process();
             fail("It should raise an IllegalStateException");
         }
         catch (IllegalStateException ise) {
             assertEquals("Cannot divide by zero.", ise.getMessage());
         }
     }
+		
+		@Test
+		public void itShouldBePossibleToGetTheOutputForComplexOperation() {
+			assertEquals(
+				"( 5 + ( 5 - ( 5 / ( 5 * ( 5 + ( 10 - 15 ) ) ) ) ) )", 
+				new OperationAdd(5, new OperationSub(5, new OperationDiv(5, new OperationMul(5, new OperationAdd(5, new OperationSub(10, 15)))))).toString()
+			);
+		}
 }
