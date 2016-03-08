@@ -3,7 +3,7 @@ package io.probedock.demo.junit;
 /**
  * Subtraction operation
  *
- * @author Laurent Prevost <laurent.prevost@probedock.io>
+ * @author Laurent Prevost laurent.prevost@probedock.io
  */
 public class OperationSub extends Operation {
 

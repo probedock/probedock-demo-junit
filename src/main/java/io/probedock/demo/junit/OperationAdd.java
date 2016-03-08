@@ -3,7 +3,7 @@ package io.probedock.demo.junit;
 /**
  * Add operation
  *
- * @author Laurent Prevost <laurent.prevost@probedock.io>
+ * @author Laurent Prevost laurent.prevost@probedock.io
  */
 public class OperationAdd extends Operation {
 

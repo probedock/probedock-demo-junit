@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Test for class {@link OperationDiv}
  *
- * @author Laurent Prevost <laurent.prevost@probedock.io>
+ * @author Laurent Prevost laurent.prevost@probedock.io
  */
 //@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
 @ProbeTestClass(contributors = "laurent.prevost@probedock.io", tags = "div", tickets = "feature-4")

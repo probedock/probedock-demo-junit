@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNotEquals;
 /**
  * Test for class {@link OperationMul}
  *
- * @author Laurent Prevost <laurent.prevost@probedock.io>
+ * @author Laurent Prevost laurent.prevost@probedock.io
  */
 //@RunWith(ProbeDockRTBlockJUnit4ClassRunner.class)
 @ProbeTestClass(contributors = "laurent.prevost@probedock.io", tags = "mul", tickets = "feature-3")

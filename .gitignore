@@ -1,3 +1,4 @@
 .idea/
 target/
 src/test/resources/probedock.yml
+probedock-demo-junit.iml
