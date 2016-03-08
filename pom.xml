@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -6,7 +7,7 @@
 
 	<groupId>io.probedock.demo</groupId>
 	<artifactId>probedock-demo-junit</artifactId>
-	<version>0.2.0</version>
+	<version>0.2.1</version>
 	<packaging>jar</packaging>
 
 	<name>Probe Dock Demo Junit integration</name>
@@ -211,13 +212,13 @@
 		<dependency>
 			<groupId>io.probedock.client</groupId>
 			<artifactId>probedock-junit</artifactId>
-			<version>0.5.0</version>
+			<version>0.5.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.probedock.rt.client</groupId>
 			<artifactId>probedock-rt-junit</artifactId>
-			<version>0.4.2</version>
+			<version>0.4.3</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

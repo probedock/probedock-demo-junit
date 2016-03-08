@@ -3,6 +3,7 @@ package io.probedock.demo.junit;
 import io.probedock.client.annotations.ProbeTest;
 import io.probedock.client.annotations.ProbeTestClass;
 import io.probedock.rt.client.junit.ProbeDockRTRule;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 

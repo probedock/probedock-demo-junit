@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.1 - March 8, 2016
+
+* Bumped probe versions
+
 ## v0.2.0 - March 8, 2016
 
 * Added the support to retrieve SCM data
