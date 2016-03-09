@@ -35,6 +35,8 @@ fi
 cat $1
 
 # Produce the additional configuration to stdout
+echo
+echo
 echo "scm:"
 echo "  name: $PROBEDOCK_SCM_NAME"
 echo "  version: $PROBEDOCK_SCM_VERSION"
